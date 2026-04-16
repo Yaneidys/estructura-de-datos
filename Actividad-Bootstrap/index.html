@@ -12,7 +12,7 @@
 
 <body>
     <!--NAVBAR-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-info-subtle">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Yaneidy</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -31,7 +31,7 @@
                 </ul>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
                 </form>
             </div>
         </div>
@@ -44,24 +44,22 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="card">
-                    <img src="https://picsum.photos/800" class="card-img-top" alt="...">
+                    <img src="https://picsum.photos/id/10/800/400" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Producto 1</h5>
+                        <p class="card-text">Descripción del producto 1</p>
+                        <a href="#" class="btn btn-primary btn-modal">Ver más</a> 
                     </div>
                 </div>
             </div>
 
             <div class="col-md-6">
                 <div class="card">
-                    <img src="https://picsum.photos/700" class="card-img-top" alt="...">
+                    <img src="https://picsum.photos/id/238/700/350" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Producto 2</h5>
+                        <p class="card-text">Descripción del producto 2</p>
+                        <a href="#" class="btn btn-primary btn-modal">Ver más</a>
                     </div>
                 </div>
             </div>
@@ -80,7 +78,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="password" class="form-label">Contraseña</label>
-                        <input type="password" class="form-control" id="Password">
+                        <input type="password" class="form-control" id="password">
                     </div>
                     <button type="submit" class="btn btn-primary mt-3 mb-4">Ingresar</button>
                 </form>
@@ -90,26 +88,16 @@
 
     </div>
 
-    <!--MODAL-->
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Launch demo modal
-    </button>
-
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="miModal" >
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Información del producto</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    Hiciste click en "Ver más"
                 </div>
             </div>
         </div>
