@@ -13,9 +13,6 @@
       @delete="handleDelete"
     />
 
-    <div class="mt-3">
-      <button class="btn btn-success" @click="goCreate">Agregar producto</button>
-    </div>
   </div>
 </template>
 
